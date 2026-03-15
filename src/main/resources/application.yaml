@@ -12,3 +12,6 @@ spring:
 
 server:
   port: 8081
+gcp:
+  project-id: liveramp-ingestion-project
+  credentials-path: gcp-key.json
