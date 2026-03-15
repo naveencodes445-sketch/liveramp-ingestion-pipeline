@@ -12,6 +12,9 @@ public class IngestionController {
     @Autowired
     private KafkaTemplate<String, String> kafkaTemplate;
 
+    @Autowired
+    private PubSubPublisherService pubSubPublisher;
+
     private static final String TOPIC = "raw-records";
 
     // Source 1 — CSV File
